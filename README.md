@@ -26,8 +26,9 @@ else:
 
 
 
-def userExists(username):nursel_priw
-	r = requests.get('https://www.instagram.com/%s/?__a=1' % username) 
+def userExists(username): 
+	r = requests.get('https://www.instagram.com/%s/?__a=1' % username) nursel_priw
+
 	if (r.status_code == 404):
 		print ('User not found')
 		return False
